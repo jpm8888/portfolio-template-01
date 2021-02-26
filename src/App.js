@@ -1,7 +1,10 @@
 
 import './Main.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import image1 from './assets/home/img1.png';
+import image2 from './assets/home/img2.jpg';
+import image3 from './assets/home/img3.jpg';
+import image4 from './assets/home/facebook.svg';
 // import image1 from './assets/home/img1.png';
 
 function App() {
@@ -10,10 +13,10 @@ function App() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-3" style={{ backgroundColor: "white" }}>
-            <nav className="navbar navbar-light bg-light">
+            <nav className="navbar navbar-light bg-light mb-5">
                     
                     <ul className="navbar-nav">
-                    <img src="#" className="navbar-brand"></img>
+                    <img src={image4} height='150px' width='50px' className="navbar-brand"></img>
                       <li className="nav-item"><a href="#" className="nav-link">Navigatiom</a></li>
                       <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
                       <li className="nav-item"><a href="#" className="nav-link">Services</a></li>
@@ -43,9 +46,9 @@ function App() {
             <div className="container">
               <div className="row">
                 <div className="col">
-                  <img src="../f/img2.jpg"></img> <label>Designed associated with creativity and grapgics</label></div>
-                <div className="col"><img src={require('./assets/home/img1.png')}></img><label>Branding is associated with creativity and graphics</label></div>
-                <div className="col"><img src={require("./assets/home/img2.jpg")}></img><label>Natural is associated with creativity and graphics</label></div>
+                  <img src={image2} height='300px' width='280px'></img> <label>Designed associated with creativity and grapgics</label></div>
+                <div className="col"><img src={image2} height='300px' width='280px'></img><label>Branding is associated with creativity and graphics</label></div>
+                <div className="col"><img src={image2} height='300px' width='280px'></img><label>Natural is associated with creativity and graphics</label></div>
               </div>
             </div>
           </div>
@@ -53,10 +56,10 @@ function App() {
             <div className="row">
               <div className="col-md-12"><p>Get in touch</p></div>
               <div className="col">
-                <img src="#"></img>
-                <img src="#"></img>
-                <img src="#"></img>
-                <img src="#"></img>
+                <img src={image4} height='150px' width='50px'></img>
+                <img src={image4} height='150px' width='50px'></img>
+                <img src={image4} height='150px' width='50px'></img>
+                <img src={image4} height='150px' width='50px'></img>
               </div>
             </div>
           </div>
