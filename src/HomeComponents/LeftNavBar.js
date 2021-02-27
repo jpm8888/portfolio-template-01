@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import logo from "../assets/home/logo.jpg";
-
+import logo from "../assets/home/img1.png";
+import styles from './left.css';
 class LeftNavBar extends Component {
     render() {
         return (
@@ -8,8 +8,8 @@ class LeftNavBar extends Component {
                 <div className="col-md-3" style={{ backgroundColor: "white" }}>
                     <nav className="navbar navbar-light bg-light mb-5">
 
-                        <ul className="navbar-nav">
-                            <img src={logo} height='150px' width='50px' className="navbar-brand" alt={'logo'}></img>
+                        <ul className="navbar-nav" id="navbar-nav">
+                            <img src={logo} height='150px' width='100px' className="navbar-brand img-fluid" alt={'logo'} id="logo"></img>
                             <li className="nav-item"><a href="#" className="nav-link">Navigation</a></li>
                             <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
                             <li className="nav-item"><a href="#" className="nav-link">Services</a></li>

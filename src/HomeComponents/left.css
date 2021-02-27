@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+#navbar-nav > li > a:focus{
+    color: black;
+    font-weight:bold;
+    
+}
+.navbar{
+    margin-top:50px;
+}
+#logo{
+    margin-top:-20px;
+    padding: 0px;
+   
+}

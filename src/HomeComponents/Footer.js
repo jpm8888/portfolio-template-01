@@ -1,18 +1,19 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import image4 from '../assets/home/facebook.svg';
 
 class Footer extends Component {
     render() {
         return (
             <div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12"><p>Get in touch</p></div>
+
+                <div className="container-fluid">
+                    <div className="row-cols-1">
                         <div className="col">
-                            <img src={image4} height='150px' width='50px'></img>
-                            <img src={image4} height='150px' width='50px'></img>
-                            <img src={image4} height='150px' width='50px'></img>
-                            <img src={image4} height='150px' width='50px'></img>
+                            <p className="figure-caption">Get in touch</p>
+                            <img src={image4} height='5px' width='10px' className="img-fluid"></img>
+                            <img src={image4} height='100px' width='10px' className="img-fluid"></img>
+                            <img src={image4} height='100px' width='10px' className="img-fluid"></img>
+                            <img src={image4} height='100px' width='50px' className="img-fluid"></img>
                         </div>
                     </div>
                 </div>
