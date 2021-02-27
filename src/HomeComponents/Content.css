@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#ui-ux{
+            position: absolute;
+            top:450px;
+            background-color: white;
+            height:80px;
+            width:190px;
+            z-index: 10;
+}
+#Branding{
+            position:absolute;
+            top:450px;
+            left:15px;
+            height:80px;
+            width: 190px;
+            background-color: white;
+            z-index: 10;
+}
+#Natural{
+            position:absolute;
+            top: 450px;
+            left:15px;
+            height: 80px;
+            width: 190px;
+            background-color: white;
+            z-index: 10;
+}
+
+#div1{
+            position: relative;
+
+}
+#div2{
+            position: relative;
+
+}
+#div3{
+            position: relative;
+
+}
+#container{
+            margin-top:40px;
+            margin-left: 60px;
+}
