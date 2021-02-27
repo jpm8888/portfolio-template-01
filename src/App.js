@@ -1,9 +1,9 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import Content from "./HomeComponents/Content";
 import Footer from "./HomeComponents/Footer";
 import LeftNavBar from "./HomeComponents/LeftNavBar";
 import UpNavBar from "./HomeComponents/UpNavBar";
-
 
 function App() {
   return (
