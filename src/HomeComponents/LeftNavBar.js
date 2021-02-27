@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import logo from "../assets/home/img1.png";
-import styles from './left.css';
+import './css/LeftNavBar.css';
+
+
 class LeftNavBar extends Component {
     render() {
         return (
