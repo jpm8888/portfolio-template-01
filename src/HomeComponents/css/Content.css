@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-#ui-ux{
+/* #ui-ux{
             position: absolute;
             top:450px;
             background-color: white;
             height:80px;
             width:190px;
             z-index: 10;
-}
-#Branding{
+} */
+/* #Branding{
             position:absolute;
             top:450px;
             left:15px;
@@ -25,21 +23,22 @@
             width: 190px;
             background-color: white;
             z-index: 10;
+} */
+
+.container_margin{
+    margin-top:40px;
+    margin-left: 60px;
 }
 
-#div1{
-            position: relative;
-
+.image_container{
+    position:relative;
 }
-#div2{
-            position: relative;
 
-}
-#div3{
-            position: relative;
-
-}
-#container{
-            margin-top:40px;
-            margin-left: 60px;
+.bottom_left_div {
+    padding : 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 18px;
 }

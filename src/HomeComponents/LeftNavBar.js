@@ -1,6 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import logo from "../assets/home/img1.png";
-import styles from './left.css';
+import './css/LeftNavBar.css';
+
+
 class LeftNavBar extends Component {
     render() {
         return (
@@ -9,19 +11,33 @@ class LeftNavBar extends Component {
                     <nav className="navbar navbar-light bg-light mb-5">
 
                         <ul className="navbar-nav" id="navbar-nav">
-                            <img src={logo} height='150px' width='100px' className="navbar-brand img-fluid" alt={'logo'} id="logo"></img>
-                            <li className="nav-item"><a href="#" className="nav-link">Navigation</a></li>
-                            <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
-                            <li className="nav-item"><a href="#" className="nav-link">Services</a></li>
-                            <li className="nav-item"><a href="#" className="nav-link">About</a></li>
-                            <li className="nav-item"><a href="#" className="nav-link">Blog</a></li>
-                            <li className="nav-item"><a href="#" className="nav-link">Contact</a></li>
+                            <Logo />
+                            <LiItem name={'Navigation'} href={'#'} />
+                            <LiItem name={'Home'} href={'#'} />
+                            <LiItem name={'Services'} href={'#'} />
+                            <LiItem name={'About'} href={'#'} />
+                            <LiItem name={'Blog'} href={'#'} />
+                            <LiItem name={'Contact'} href={'#'} />
                         </ul>
                     </nav>
                 </div>
             </div>
         );
     }
+}
+
+const Logo = () => {
+    return (
+        <img src={logo} height='150px' width='100px' className="navbar-brand img-fluid" alt={'logo'} id="logo"></img>
+    )
+}
+
+const LiItem = (props) => {
+    let { name, href } = props;
+
+    return (
+        <li className="nav-item"><a href={href} className="nav-link">{name}</a></li>
+    )
 }
 
 export default LeftNavBar;

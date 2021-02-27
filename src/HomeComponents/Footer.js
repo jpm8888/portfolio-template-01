@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import image4 from '../assets/home/facebook.svg';
+import './css/Footer.css';
 
 class Footer extends Component {
     render() {
