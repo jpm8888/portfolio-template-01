@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './css/UpNavBar.css';
 
 class UpNavBar extends Component {
@@ -7,16 +7,24 @@ class UpNavBar extends Component {
             <div>
                 <nav className="navbar  navbar-expand-md navbar-light bg-light align-center ml-5">
                     <ul className="navbar-nav" id="navbar-nav">
-                        <li className="nav-item"><a href="#" className="nav-link">selected work</a></li>
-                        <li className="nav-item"><a href="#" className="nav-link">branding</a></li>
-                        <li className="nav-item"><a href="#" className="nav-link">digital experience</a></li>
-                        <li className="nav-item"><a href="#" className="nav-link">graphics design</a></li>
-                        <li className="nav-item"><a href="#" className="nav-link">custom printing</a></li>
+                        <LiItem name={'selected work'} href={'#'} />
+                        <LiItem name={'branding'} href={'#'} />
+                        <LiItem name={'digital experience'} href={'#'} />
+                        <LiItem name={'graphic design'} href={'#'} />
+                        <LiItem name={'custom printing'} href={'#'} />
                     </ul>
                 </nav>
             </div>
         );
     }
+}
+
+const LiItem = (props) => {
+    let { name, href } = props;
+
+    return (
+        <li className="nav-item"><a href={href} className="nav-link">{name}</a></li>
+    )
 }
 
 export default UpNavBar;
