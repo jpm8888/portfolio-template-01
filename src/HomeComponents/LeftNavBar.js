@@ -7,7 +7,7 @@ class LeftNavBar extends Component {
     render() {
         return (
             <div>
-                <div className="col-md-3" style={{ backgroundColor: "white" }}>
+                <div className="col-md-2">
                     <nav className="navbar navbar-light bg-light mb-5">
 
                         <ul className="navbar-nav" id="navbar-nav">

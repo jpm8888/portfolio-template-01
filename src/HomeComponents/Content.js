@@ -11,9 +11,11 @@ class Content extends Component {
             <div>
                 <div className="container ml-5 container_margin">
                     <div className="row">
-                        <ImageContainer caption={'Designed associated with creativity and graphics1'} image={image2} bottomText={'Hello1'} />
-                        <ImageContainer caption={'Designed associated with creativity and graphics2'} image={image6} bottomText={'Hello2'} />
-                        <ImageContainer caption={'Designed associated with creativity and graphics3'} image={image7} bottomText={'Hello3'} />
+
+                        <ImageContainer caption={'Designed associated with creativity and graphics'} image={image2} bottomText={'UI-UX Design'} />
+                        <ImageContainer caption={"Branding is associated with creativity and graphics"} image={image6} bottomText={'Branding idea'} />
+                        <ImageContainer caption={'Natural is associated with creativity and graphics'} image={image7} bottomText={'Natural Food'} />
+                        
                     </div>
                 </div>
             </div>
@@ -23,10 +25,10 @@ class Content extends Component {
 };
 
 const ImageContainer = (props) => {
-    let { caption, image, bottomText } = props;
+    let { caption, image, bottomText,  } = props;
 
     return (
-        <div className="col-md-4">
+        <div className="col-md-4 ">
             <div className={'image_container'}>
                 <img src={image} className="img-fluid" />
                 <div className="bottom_left_div">

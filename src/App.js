@@ -12,11 +12,12 @@ function App() {
         <div className="row">
           <LeftNavBar />
 
-          <div className="col-md-9" style={{ backgroundColor: "white" }}>
+          <div className="col" style={{ backgroundColor:"white" }}>
             <UpNavBar />
             <Content />
+            <Footer />
           </div>
-          <Footer />
+        
 
         </div>
       </div>

@@ -5,9 +5,12 @@
 }
 .navbar{
     margin-top:50px;
+
+
 }
 #logo{
     margin-top:-20px;
     padding: 0px;
    
 }
+body{background-color: white;}
