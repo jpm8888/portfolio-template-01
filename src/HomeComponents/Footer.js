@@ -1,27 +1,29 @@
 import React, {Component} from 'react';
-import image4 from '../assets/home/facebook.svg';
 import './css/Footer.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {  faFacebookF , faLinkedinIn,faTwitter,faBehance} from '@fortawesome/free-brands-svg-icons';
 class Footer extends Component {
     render() {
         return (
             <div>
-
-                <div className="container-fluid" id="footer">
-                    <div className="row">
-                        <div className="col">
-                        <div id="div">
-                        <p className="figure-caption">Get in touch</p>
-                            <img src={image4} height='5px' width='25px' className="img-fluid"></img>
-                            <img src={image4} height='100px' width='25px' className="img-fluid"></img>
-                            <img src={image4} height='100px' width='25px' className="img-fluid"></img>
-                            <img src={image4} height='100px' width='25px' className="img-fluid"></img>
-                        </div>
-                           
-                           
-                        </div>
+                <div className="container-fluid">
+                 <div className="row">
+                    <div className="col">
+                        <div id="footer">
+                    <p className="figure-caption mr-4">Get in touch</p>
+                        <label><FontAwesomeIcon icon={faFacebookF} pull="center" size="1x" className="ml-4" color="grey"/></label>
+                        <label><FontAwesomeIcon icon={ faLinkedinIn} pull="center" size="1x" className="ml-4"color="grey"/></label> 
+                        <label><FontAwesomeIcon icon={faTwitter} pull="center" size="1x" className="ml-4" color="grey"/></label> 
+                        <label><FontAwesomeIcon icon={faBehance} pull="center" size="1x" className="ml-4" color="grey"/></label> 
+                        
                     </div>
                 </div>
+            </div>   
+                    
+                    
+                    
+            </div>
             </div>
         );
     }

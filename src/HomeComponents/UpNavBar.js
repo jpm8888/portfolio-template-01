@@ -1,30 +1,40 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import './css/UpNavBar.css';
+export default class Menu extends Component {
 
-class UpNavBar extends Component {
-    render() {
-        return (
-            <div>
-                <nav className="navbar  navbar-expand-md navbar-light bg-light align-center ml-5">
-                    <ul className="navbar-nav" id="navbar-nav">
-                        <LiItem name={'selected work'} href={'#'} />
-                        <LiItem name={'branding'} href={'#'} />
-                        <LiItem name={'digital experience'} href={'#'} />
-                        <LiItem name={'graphic design'} href={'#'} />
-                        <LiItem name={'custom printing'} href={'#'} />
-                    </ul>
-                </nav>
-            </div>
-        );
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      menu: false
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu(){
+    this.setState({ menu: !this.state.menu })
+  }
+
+  render() {
+
+  const show = (this.state.menu) ? "show" : "" ;
+
+  return (
+
+    <nav className="navbar navbar-expand-lg navbar-light ml-5" >
+      <button className="navbar-toggler" type="button" onClick={ this.toggleMenu } id="button">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className={"collapse navbar-collapse " + show}>
+        <div className="navbar-nav" id="navbar-nav">
+         <a className="nav-item nav-link" href="#">selected work</a>
+          <a className="nav-item nav-link" href="#">branding</a>
+          <a className="nav-item nav-link" href="#">digital experiences</a>
+          <a className="nav-item nav-link" href="#">graphics design</a>
+          <a className="nav-item nav-link" href="#">custom printing</a>
+        </div>
+      </div>
+    </nav>
+
+  );
+  }
 }
-
-const LiItem = (props) => {
-    let { name, href } = props;
-
-    return (
-        <li className="nav-item"><a href={href} className="nav-link">{name}</a></li>
-    )
-}
-
-export default UpNavBar;
