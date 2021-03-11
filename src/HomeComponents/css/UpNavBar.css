@@ -1,8 +1,9 @@
-#navbar-nav > li > a:focus{
+#navbar-nav > a:focus{
     color: black;
     font-weight:bold;
     text-decoration: underline;
 }
 .navbar{
     margin-top:20px;
+    z-index: 1;
 }

@@ -8,18 +8,16 @@ import UpNavBar from "./HomeComponents/UpNavBar";
 function App() {
   return (
     <div className="App">
-      <div className="container-fluid">
+      <div className="container-fluid-sm">
         <div className="row">
           <LeftNavBar />
-
-          <div className="col-md-9" style={{ backgroundColor: "white" }}>
+          <div className="col" style={{ backgroundColor:"white" }}>
             <UpNavBar />
-            <Content />
+            <Content /> 
           </div>
-          <Footer />
-
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,13 +1,18 @@
 #navbar-nav > li > a:focus{
     color: black;
     font-weight:bold;
-    
+    text-decoration: underline;
 }
 .navbar{
     margin-top:50px;
+
+
 }
 #logo{
     margin-top:-20px;
     padding: 0px;
    
 }
+body{background-color: white;}
+
+
