@@ -31,7 +31,7 @@ body{background-color: white;}
     }
 }
 
-#imgTitle{
+.imgTitle{
     color: black;
     font-style: bold;
     font-weight: bolder;
