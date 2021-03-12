@@ -36,9 +36,9 @@ const ImageContainer = (props) => {
             <div className={'image_container'}>
                 <img src={image} className="img-fluid" />
                 <div className=" figure bottom_left_div">
-                    <div className="figure-caption" id="imgTitle">
+                    <div className="figure-caption imgTitle">
                         {bottomText}
-                        <FontAwesomeIcon icon={faArrowRight} pull="center" size="1x" className="ml-4" />
+                        <FontAwesomeIcon icon={faArrowRight} pull="center" size="1x" className="ml-3" />
                     </div>
 
                 </div>

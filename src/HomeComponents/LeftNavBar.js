@@ -8,7 +8,7 @@ class LeftNavBar extends Component {
         return (
             <div>
                 <div className="col-md-2">
-                    <nav className="navbar navbar-light bg-light mb-5">
+                    <nav className="navbar navbar-light mb-5">
 
                         <ul className="navbar-nav" id="navbar-nav">
                             <Logo />
@@ -28,7 +28,7 @@ class LeftNavBar extends Component {
 
 const Logo = () => {
     return (
-        <img src={logo} height='150px' width='100px' className="navbar-brand img-fluid" alt={'logo'} id="logo"></img>
+        <img src={logo} height='150px' width='100px' className="navbar-brand img-fluid logo" alt={'logo'} ></img>
     )
 }
 
